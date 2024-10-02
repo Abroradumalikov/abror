@@ -2,55 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <link
+      style="border-radius: 50%"
+      rel="web site icon"
+      href="./circular_nation_insights_logo.png"
+    />
+    <title>Nation Insights</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <form action="#" class="form">
-      <label for="name">UserName:</label>
-      <input id="name" type="text" placeholder="username" name="name" />
-      <span class="user-error"
-        >User must be between 3 and 25 characters and UpperCase</span
-      >
-
-      <label for="email">Email:</label>
-      <input
-        id="email"
-        type="email"
-        placeholder="hello@example.com"
-        name="email"
-      />
-      <span class="email-error">It must include @ character</span>
-
-      <label for="password">Password:</label>
-      <div class="box">
-        <input
-          id="password"
-          type="password"
-          name="password"
-          placeholder="your password"
-          class="input-img"
-        />
-        <img class="eye" src="./no.svg" alt="no" />
+    <div class="btn__box">
+      <div class="area__population__filter">
+        <div class="area-population">
+          <button class="filter-btn">countries with the most population</button>
+          <button class="area-btn">area</button>
+        </div>
+        <div class="filter__region__btn">
+          <li class="menu">
+            <span class="filter-region-menu"> Filter region </span>
+            <ul class="filter__menu">
+              <li class="europe">Europe</li>
+              <li class="africa">Africa</li>
+              <li class="asia">Asia</li>
+              <li class="americas">Americas</li>
+            </ul>
+          </li>
+        </div>
       </div>
-      <span class="password-error">
-        Password must have at least 8 characters, including at least 1 lowercase
-        character and 1 uppercase character
-      </span>
+      <div class="light-box">
+        <button class="btn">
+          <button id="dark-btn" class="dark-btn">
+            <img
+              class="img-wit"
+              src="./dark-mode-night-moon-svgrepo-com.svg"
+              alt=""
+            />
+          </button>
+          <button id="lght-btn" class="hidden light-btn">
+            <img class="img-wit" src="./light-svgrepo-com.svg" alt="" />
+          </button>
+        </button>
+      </div>
+    </div>
 
-      <label for="confirm-password">Confirm Password:</label>
-      <input
-        id="confirm-password"
-        type="password"
-        name="confirm-password"
-        placeholder="Reenter your password"
-      />
-      <span class="confirm-error">Please enter the password again</span>
-
-      <button type="submit">Sign Up</button>
-    </form>
+    <div class="box3">
+      <div class="box"></div>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>
